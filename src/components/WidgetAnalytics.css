@@ -1,0 +1,49 @@
+.widget-analytics {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #6c757d;
+  color: white;
+  padding: 0.25rem;
+  transform: translateY(100%);
+  transition: transform 0.2s ease;
+  z-index: 5;
+}
+
+.widget:hover .widget-analytics {
+  transform: translateY(0);
+}
+
+.analytics-header {
+  margin-bottom: 0.25rem;
+}
+
+.analytics-title {
+  font-size: 0.625rem;
+  font-weight: 500;
+}
+
+.analytics-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.stat-label {
+  font-size: 0.5rem;
+  opacity: 0.8;
+  margin-bottom: 0.125rem;
+}
+
+.stat-value {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
